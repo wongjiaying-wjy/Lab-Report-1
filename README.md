@@ -3,19 +3,22 @@
 **BSD3513 Introduction to Artificial Intelligence · Lab Report 1**
 Author: WONG JIA YING · Universiti Malaysia Pahang Al-Sultan Abdullah (UMPSA)
 
-🌐 **Streamlit Link:** [https://ailabreport1.streamlit.app](https://lab-report-1-4dbaejccwqcel55glfrhsb.streamlit.app/)
+🌐 **Live app:** [https://lab-report-1-4dbaejccwqcel55glfrhsb.streamlit.app/](https://lab-report-1-4dbaejccwqcel55glfrhsb.streamlit.app/)
+
+💻 **Source code:** [https://github.com/wongjiaying-wjy/Lab-Report-1](https://github.com/wongjiaying-wjy/Lab-Report-1)
+
 ![App overview](image/Title.png)
 
 ## About
 This project is an interactive Streamlit web app for studying two uninformed search strategies, **Breadth-First Search (BFS)** and **Depth-First Search (DFS)**. It runs both on a directed graph and shows, step by step, which node is expanded, what is waiting in the frontier and which path leads to the goal. Whenever a node has several neighbours, they are visited in **alphabetical order** (tie-breaking rule from the lab question).
 
-## What you can do
-- **Edit the graph:** type your own directed edges in the sidebar (the Lab 1 graph is loaded by default).
-- **Pick a start node, an optional goal node and an algorithm:** BFS, DFS or both side by side.
-- **Inspect any step:** use the slider to see the visited nodes, frontier, depth and parent at each expansion.
-- **Watch it run:** press Autoplay and the graph is redrawn node by node at a speed you choose.
-- **Compare results:** a BFS vs DFS table shows data structure, expansion order, nodes expanded, frontier size, depth and goal path.
-- **Start over quickly:** one button restores all default settings.
+## Key features
+- **Build your own graph:** enter directed edges in the sidebar, or just use the Lab 1 graph that loads automatically.
+- **Choose how to search:** set the starting node, add a goal node if you want one, and run BFS, DFS or both together.
+- **Step through the search:** drag the slider to any expansion step and see the current node, visited list, frontier, depth and parent at that moment.
+- **Play the animation:** click the **▶ Autoplay** button to watch the graph update one node at a time, and use the sidebar slider to speed it up or slow it down.
+- **See the differences at a glance:** when both algorithms run, a comparison table lists the data structure, expansion order, nodes expanded, frontier size, deepest level and goal path.
+- **Reset in one click:** the reset button in the sidebar brings back all the default settings.
 
 ## Screenshots
 | BFS run | DFS run |
@@ -46,7 +49,7 @@ Expansion order starting from **A** (alphabetical tie-breaking):
 
 ```bash
 pip install -r requirements.txt
-streamlit run bfsdfs.py
+streamlit run "Lab Report 1.py"
 ```
 
 The app opens in your browser, usually at `http://localhost:8501`.
@@ -62,7 +65,7 @@ F          # a lone node (no edges)
 
 Text after `#` is ignored. Node names are case-insensitive and the graph is limited to 100 nodes.
 
-## Code overview (`bfsdfs.py`)
+## Code overview (`Lab Report 1.py`)
 
 | Function | Purpose |
 |---|---|
@@ -74,9 +77,9 @@ Text after `#` is ignored. Node names are case-insensitive and the graph is limi
 
 ## Repository layout
 ```
-Lab Report 1.py            # Streamlit application
+Lab Report 1.py      # Streamlit application
 requirements.txt     # Python dependencies
-image/         # Images used in this README
+image/               # Images used in this README
 ```
 
 ## Built with
