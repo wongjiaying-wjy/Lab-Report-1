@@ -24,7 +24,7 @@ This project is an interactive Streamlit web app for studying two uninformed sea
 
 **BFS vs DFS comparison**
 
-![Comparison](Table_Comparison.png)
+![Comparison](image/Table_Comparison.png)
 
 ## Default graph (Lab 1)
 ```
