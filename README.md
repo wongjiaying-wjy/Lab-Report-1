@@ -22,9 +22,9 @@ This project is an interactive Streamlit web app for studying two uninformed sea
 |---|---|
 | ![BFS](image/BFS.png) | ![DFS](image/DFS.png) |
 
-|Side-by-side comparison |
-|---|---|
-| ![Comparison](image/Table Comparison.png) |
+**BFS vs DFS comparison**
+
+![Comparison](Table_Comparison.png)
 
 ## Default graph (Lab 1)
 ```
