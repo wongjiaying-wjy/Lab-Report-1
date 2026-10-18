@@ -3,9 +3,7 @@
 **BSD3513 Introduction to Artificial Intelligence · Lab Report 1**
 Author: WONG JIA YING · Universiti Malaysia Pahang Al-Sultan Abdullah (UMPSA)
 
-[![Open in Streamlit](https://lab-report-1-4dbaejccwqcel55glfrhsb.streamlit.app/)](https://ailabreport1.streamlit.app)
-
-🌐 **Try it online:** https://ailabreport1.streamlit.app
+🌐 **Streamlit Link:** [https://ailabreport1.streamlit.app](https://lab-report-1-4dbaejccwqcel55glfrhsb.streamlit.app/)
 ![App overview](image/Title.png)
 
 ## About
