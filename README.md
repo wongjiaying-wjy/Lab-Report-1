@@ -1,7 +1,8 @@
 # 🔎 Search Explorer: BFS vs DFS on a Directed Graph
 
 **BSD3513 Introduction to Artificial Intelligence · Lab Report 1**
-Author: WONG JIA YING · Universiti Malaysia Pahang Al-Sultan Abdullah (UMPSA)
+
+SD24048 WONG JIA YING · Universiti Malaysia Pahang Al-Sultan Abdullah (UMPSA)
 
 🌐 **Live app:** [https://lab-report-1-4dbaejccwqcel55glfrhsb.streamlit.app/](https://lab-report-1-4dbaejccwqcel55glfrhsb.streamlit.app/)
 
