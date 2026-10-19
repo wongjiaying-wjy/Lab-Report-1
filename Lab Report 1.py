@@ -23,8 +23,6 @@ def search(graph, start, goal=None, method='BFS'):
         raise ValueError('Method must be BFS or DFS.')
 
     frontier = deque([start]) if method == 'BFS' else [start]
-    # BFS marks a node when it is enqueued; DFS marks a node when it is expanded,
-    # so the deepest branch reaches a node first (same result as recursive DFS).
     discovered = {start} if method == 'BFS' else set()
     parent = {start: None}
     depth = {start: 0}
@@ -34,7 +32,7 @@ def search(graph, start, goal=None, method='BFS'):
         node = frontier.popleft() if method == 'BFS' else frontier.pop()
 
         if method == 'DFS':
-            if node in discovered:  # duplicate stack entry: already expanded, skip it
+            if node in discovered:  
                 trace.append({
                     'step': len(trace) + 1,
                     'current': f'{node} (skip)',
@@ -109,7 +107,6 @@ def edges_from_text(text):
     if len(graph) > 100:
         raise ValueError('Maximum 100 nodes.')
     return normalize(graph)
-
 
 DEFAULT_EDGES = '\n'.join(
     f'{u} {v}' if vs else u
@@ -190,10 +187,9 @@ for m, r in results.items():
     z.metric('Goal path edges', len(r['path']) - 1 if r['found'] else '—')
     step = st.slider(f'{m}: inspect expansion step', 1, len(r['trace']), len(r['trace']), key=f"{m}_{len(r['trace'])}")
 
-    # Autoplay instruction
     st.caption("💡 Click **Autoplay** to see how the search algorithm visits each node step by step.")
 
-    play = st.button(f'▶ Autoplay {m}', key=f'play_{m}')  # Added feature 2: autoplay
+    play = st.button(f'▶ Autoplay {m}', key=f'play_{m}')  
     left, right = st.columns([1.2, 1])
     with left:
         graph_box = st.empty()
