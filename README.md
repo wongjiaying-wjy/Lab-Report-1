@@ -2,7 +2,7 @@
 
 **BSD3513 Introduction to Artificial Intelligence · Lab Report 1**
 
-SD24048 WONG JIA YING · Universiti Malaysia Pahang Al-Sultan Abdullah (UMPSA)
+SD24048 WONG JIA YING 
 
 🌐 **Live App:** [https://lab-report-1-4dbaejccwqcel55glfrhsb.streamlit.app/](https://lab-report-1-4dbaejccwqcel55glfrhsb.streamlit.app/)
 
